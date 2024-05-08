@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "235037666415",
+    "project_id": "woman-saftey-app-c9554",
+    "storage_bucket": "woman-saftey-app-c9554.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:235037666415:android:d82a5885fd56e1459a719a",
+        "android_client_info": {
+          "package_name": "com.example.womansafteyapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLWh1I9lHekwCHKHRM0EVRprBQhejOs_0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
