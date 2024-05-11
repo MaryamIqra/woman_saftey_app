@@ -5,18 +5,18 @@
     <string name="tool_bar">Woman safety app</string>
     //LOGIN WITH YOUR ACCOUNT
     <string name="Signup_As">Signup with your Account</string>
-    <string name="Signup1">Signup as User</string>
+    <string name="Signup1">Signup as Woman</string>
     <string name="Signup2">Signup as Guardian</string>
     <string name="Signup3">Signup as Police</string>
     <string name="permissions">Need Permissions First</string>
     //USER LOGIN
-    <string name="ULT1">User Login</string>
-    <string name="ULT2">username</string>
+    <string name="ULT1">Woman Login</string>
+    <string name="ULT2">woman name</string>
     <string name="ULT3">Password</string>
     <string name="UL4B">Login</string>
     <string name="ULT5">Create a new Account</string>
     //USER SIGNUP
-    <string name="UST1">User Signup</string>
+    <string name="UST1">woman Signup</string>
     <string name="UST2">Name</string>
     <string name="UST3">Email</string>
     <string name="UST4">Password</string>

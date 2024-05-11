@@ -1,3 +1,5 @@
+
+
 package com.example.womansafteyapp;
 
 import android.content.Intent;
@@ -8,10 +10,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class chat_guardian extends AppCompatActivity {
+    RecyclerView recyclerView;
+    public chat_guardian(){
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,3 +53,4 @@ public class chat_guardian extends AppCompatActivity {
         });
     }
 }
+

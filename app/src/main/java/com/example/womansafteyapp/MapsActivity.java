@@ -31,10 +31,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         map = findViewById(R.id.map);
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
-        assert mapFragment != null;
-        mapFragment.getMapAsync(this);
+        if (mapFragment != null) {
+            mapFragment.getMapAsync(this);
+        }
     }
-
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
         LatLng mapPakistan = new LatLng(30.3753,69.3451);

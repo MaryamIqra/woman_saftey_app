@@ -1,6 +1,7 @@
 [versions]
 agp = "8.3.2"
 dexter = "6.2.3"
+firebaseBom = "33.0.0"
 gbutton = "v1.0.19"
 junit = "4.13.2"
 junitVersion = "1.1.5"
@@ -16,6 +17,8 @@ playServicesMaps = "18.2.0"
 
 [libraries]
 dexter = { module = "com.karumi:dexter", version.ref = "dexter" }
+firebase-auth = { module = "com.google.firebase:firebase-auth" }
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
 gbutton = { module = "com.github.TutorialsAndroid:GButton", version.ref = "gbutton" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }

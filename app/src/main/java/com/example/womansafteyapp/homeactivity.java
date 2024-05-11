@@ -1,9 +1,11 @@
 package com.example.womansafteyapp;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,15 +15,32 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
 public class homeactivity extends AppCompatActivity {
-    Button safety_tips;
+
+    Button safety_tips, alarm;
     Button showMap;
+    TextView usernameTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        setContentView(R.layout.activity_homeactivity);
+        alarm = findViewById(R.id.user_2);
         safety_tips = findViewById(R.id.user_4);
         showMap = findViewById(R.id.user_6);
+        usernameTextView = findViewById(R.id.UserN_account);
+
+
+
+        final MediaPlayer mediaPlayer = MediaPlayer.create(this,R.raw.beep);
+        alarm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mediaPlayer.start();
+            }
+        });
+        // Assume the username is passed from the previous activity as "username"
+        String username = getIntent().getStringExtra("username");
+        usernameTextView.setText(username);
 
         showMap.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,14 +53,13 @@ public class homeactivity extends AppCompatActivity {
         safety_tips.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Start UserActivity when signUser EditText is clicked
+                // Start safety_tips activity when safety_tips button is clicked
                 startActivity(new Intent(homeactivity.this, safety_tips.class));
             }
         });
 
 
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_homeactivity);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationViewh);
         bottomNavigationView.setSelectedItemId(R.id.bottom_home);
@@ -68,5 +86,4 @@ public class homeactivity extends AppCompatActivity {
             return false;
         });
     }
-
 }

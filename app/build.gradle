@@ -42,4 +42,8 @@ dependencies {
     androidTestImplementation libs.espresso.core
     implementation(libs.dexter)
     implementation(libs.play.services.maps)
+
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.auth)
+
 }
